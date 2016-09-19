@@ -9,7 +9,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package Rachael_Ireson
+ * @package Emptyhead_Starter
  */
 
 get_header(); ?>

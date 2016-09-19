@@ -1,13 +1,13 @@
 <?php
 /**
- * Rachael_Ireson functions and definitions.
+ * Emptyhead_Starter functions and definitions.
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *
- * @package Rachael_Ireson
+ * @package Emptyhead_Starter
  */
 
-if ( ! function_exists( 'rachaelireson_setup' ) ) :
+if ( ! function_exists( 'emptyheadstarter_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.
  *
@@ -15,14 +15,14 @@ if ( ! function_exists( 'rachaelireson_setup' ) ) :
  * runs before the init hook. The init hook is too late for some features, such
  * as indicating support for post thumbnails.
  */
-function rachaelireson_setup() {
+function emptyheadstarter_setup() {
 	/*
 	 * Make theme available for translation.
 	 * Translations can be filed in the /languages/ directory.
 	 * If you're building a theme based on components, use a find and replace
-	 * to change 'rachaelireson' to the name of your theme in all the template files.
+	 * to change 'emptyheadstarter' to the name of your theme in all the template files.
 	 */
-	load_theme_textdomain( 'rachaelireson', get_template_directory() . '/languages' );
+	load_theme_textdomain( 'emptyheadstarter', get_template_directory() . '/languages' );
 
 	// Add default posts and comments RSS feed links to head.
 	add_theme_support( 'automatic-feed-links' );
@@ -42,11 +42,11 @@ function rachaelireson_setup() {
 	 */
 	add_theme_support( 'post-thumbnails' );
 
-	add_image_size( 'rachaelireson-featured-image', 640, 9999 );
+	add_image_size( 'emptyheadstarter-featured-image', 640, 9999 );
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
-		'menu-1' => esc_html__( 'Top', 'rachaelireson' ),
+		'menu-1' => esc_html__( 'Top', 'emptyheadstarter' ),
 		) );
 
 	/**
@@ -72,13 +72,13 @@ function rachaelireson_setup() {
 	) );
 
 	// Set up the WordPress core custom background feature.
-	// add_theme_support( 'custom-background', apply_filters( 'rachaelireson_custom_background_args', array(
+	// add_theme_support( 'custom-background', apply_filters( 'emptyheadstarter_custom_background_args', array(
 	// 	'default-color' => 'ffffff',
 	// 	'default-image' => '',
 	// ) ) );
 }
 endif;
-add_action( 'after_setup_theme', 'rachaelireson_setup' );
+add_action( 'after_setup_theme', 'emptyheadstarter_setup' );
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
@@ -87,17 +87,17 @@ add_action( 'after_setup_theme', 'rachaelireson_setup' );
  *
  * @global int $content_width
  */
-function rachaelireson_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'rachaelireson_content_width', 640 );
+function emptyheadstarter_content_width() {
+	$GLOBALS['content_width'] = apply_filters( 'emptyheadstarter_content_width', 640 );
 }
-add_action( 'after_setup_theme', 'rachaelireson_content_width', 0 );
+add_action( 'after_setup_theme', 'emptyheadstarter_content_width', 0 );
 
 /**
  * Return early if Custom Logos are not available.
  *
  * @todo Remove after WP 4.7
  */
-// function rachaelireson_the_custom_logo() {
+// function emptyheadstarter_the_custom_logo() {
 // 	if ( ! function_exists( 'the_custom_logo' ) ) {
 // 		return;
 // 	} else {
@@ -110,9 +110,9 @@ add_action( 'after_setup_theme', 'rachaelireson_content_width', 0 );
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
  */
-// function rachaelireson_widgets_init() {
+// function emptyheadstarter_widgets_init() {
 // 	register_sidebar( array(
-// 		'name'          => esc_html__( 'Sidebar', 'rachaelireson' ),
+// 		'name'          => esc_html__( 'Sidebar', 'emptyheadstarter' ),
 // 		'id'            => 'sidebar-1',
 // 		'description'   => '',
 // 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
@@ -121,13 +121,13 @@ add_action( 'after_setup_theme', 'rachaelireson_content_width', 0 );
 // 		'after_title'   => '</h2>',
 // 	) );
 // }
-// add_action( 'widgets_init', 'rachaelireson_widgets_init' );
+// add_action( 'widgets_init', 'emptyheadstarter_widgets_init' );
 
 /**
  * Enqueue scripts and styles.
  */
-function rachaelireson_scripts() {
-	wp_enqueue_style( 'rachaelireson-style', get_template_directory_uri() . '/build/style.min.css' );
+function emptyheadstarter_scripts() {
+	wp_enqueue_style( 'emptyheadstarter-style', get_template_directory_uri() . '/build/style.min.css' );
 
 	wp_enqueue_script( 'jquery' );
 	wp_enqueue_script( 'production-js', get_template_directory_uri() . '/build/production.min.js', array(), '20151215', true );
@@ -135,4 +135,4 @@ function rachaelireson_scripts() {
 	wp_enqueue_script( 'starter-modernizr', get_template_directory_uri() . '/build/modernizr-custom.js', array(), '3.3.1', false );
 
 }
-add_action( 'wp_enqueue_scripts', 'rachaelireson_scripts' );
+add_action( 'wp_enqueue_scripts', 'emptyheadstarter_scripts' );

@@ -4,7 +4,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package Rachael_Ireson
+ * @package Emptyhead_Starter
  */
 
 ?>
@@ -18,7 +18,7 @@
 			the_content();
 
 			wp_link_pages( array(
-				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'rachaelireson' ),
+				'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'emptyheadstarter' ),
 				'after'  => '</div>',
 			) );
 		?>
@@ -28,7 +28,7 @@
 			edit_post_link(
 				sprintf(
 					/* translators: %s: Name of current post */
-					esc_html__( 'Edit %s', 'rachaelireson' ),
+					esc_html__( 'Edit %s', 'emptyheadstarter' ),
 					the_title( '<span class="screen-reader-text">"', '"</span>', false )
 				),
 				'<span class="edit-link">',

@@ -4,7 +4,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/#single-post
  *
- * @package Rachael_Ireson
+ * @package Emptyhead_Starter
  */
 
 get_header(); ?>

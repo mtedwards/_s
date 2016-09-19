@@ -6,7 +6,7 @@
  *
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  *
- * @package Rachael_Ireson
+ * @package Emptyhead_Starter
  */
 
 ?>

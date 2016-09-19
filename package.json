@@ -1,7 +1,7 @@
 {
-  "name": "rachaelireson",
+  "name": "emptyheadstarter",
   "version": "1.0.0",
-  "description": "Rachael Ireson",
+  "description": "Emptyhead Starter",
   "main": "gulpfile.js",
   "dependencies": {
     "gulp": "^3.9.1",

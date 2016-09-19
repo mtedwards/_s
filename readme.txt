@@ -1,4 +1,4 @@
-=== Rachael_Ireson ===
+=== Emptyhead_Starter ===
 
 Contributors:
 Tags:
@@ -11,7 +11,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
 
-A one page theme for Rachael
+A one page theme for Emptyhead
 
 == Installation ==
 
@@ -23,7 +23,7 @@ A one page theme for Rachael
 
 = Does this theme support any plugins? =
 
-Rachael_Ireson includes support for Jetpack's Infinite Scroll as well as other features.
+Emptyhead_Starter includes support for Jetpack's Infinite Scroll as well as other features.
 
 == Changelog ==
 
